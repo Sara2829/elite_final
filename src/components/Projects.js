@@ -11,33 +11,33 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "PiHome Connec",
+      description: "Create a smart home ecosystem with a Raspberry Pi, NFC, and IoT integration for seamless automation, controlled by tapping NFC cards",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "EcoBin Tracker",
+      description: " Leverage MQTT (Message Queuing Telemetry Transport) with Raspberry Pi to develop a Smart Waste Collection Management systemt",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Gesture Mate",
+      description: "Employ the LPC2148 microcontroller to create a Gesture Recognition System, interpreting hand movements for diverse applications. ",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Industri Sync",
+      description: "  Utilize FPGA technology for robust Industrial Application Monitoring & Controlling, ensuring real-time data processing and responsive control systems",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Agri Sync",
+      description: " Implement a cutting-edge Real-Time Automation and Monitoring System for Modernized Agriculture by leveraging the ARM7 TDMI LPC2148 microcontroller.",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "AgroPi",
+      description: "Real- Time Automation and Monitoring System for Modernized Agriculture using ARM7 TDMI LPC2148",
       imgUrl: projImg3,
     },
   ];
@@ -51,7 +51,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p></p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

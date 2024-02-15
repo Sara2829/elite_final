@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/logo.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Elites Here"];
   const period = 2000;
 
   useEffect(() => {
@@ -55,9 +55,9 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <span className="tagline">Welcome</span>
+                <h1>{`Hello`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Elites", "Here", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Step into the future with Elite – the official departmental club of Electronics and Telecommunication! 🌐✨ We're a community of innovators, connecting minds and sparking creativity. Explore the world of cutting-edge technology and endless possibilities .</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>

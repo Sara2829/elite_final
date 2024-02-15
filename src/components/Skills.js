@@ -29,36 +29,49 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                        </Carousel>
-                    </div>
-                </div>
+    <div className="home-container">
+    <div className="profile-card">
+        <div className="img">
+            <img src="./man.jpg" alt="Profile" />
+        </div>
+        <div className="caption">
+            <h3>Tom Cruise</h3>
+            <p>Full Stack Developer</p>
+            <div className="social-links">
+                <i className="fab fa-facebook"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-instagram"></i>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
-    </section>
+    </div>
+    <div className="profile-card">
+        <div className="img">
+            <img src="./man.jpg" alt="Profile" />
+        </div>
+        <div className="caption">
+            <h3>David Wornar</h3>
+            <p>Front End Developer</p>
+            <div className="social-links">
+                <i className="fab fa-facebook"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div className="profile-card">
+        <div className="img">
+            <img src="./man.jpg" alt="Profile" />
+        </div>
+        <div className="caption">
+            <h3>Vin Diesel</h3>
+            <p>Back End Developer</p>
+            <div className="social-links">
+                <i className="fab fa-facebook"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+</div>
   )
 }
