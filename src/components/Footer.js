@@ -7,22 +7,54 @@ import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <Container>
-        <Row className="align-items-center">
-          <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
-          </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+    <>
+    <div className="Footer">
+        <div className="container">
+            <div className="row">
+                <div className="col-md-6 col-lg-5 col-12 ft-1">
+                    <h3><span>WALEED</span>CODES</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ea quo ex ullam laboriosam magni totam, facere eos iure voluptate.</p>
+                    <div className="footer-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <div className="col-md-6 col-lg-3 col-12 ft-2">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li className="nav-item">
+                            <a className="" href="/">Services</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="" href="/">Portfolio</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="" href="/">Contact Us</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="" href="/">Services</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="" href="/">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="col-md-6 col-lg-4 col-12 ft-3">
+                    <h5>Quick Links</h5>
+                    <p><i class="fa-solid fa-phone-volume"></i> +92 3121324083</p>
+                    <p><i class="fa-solid fa-envelope"></i> waleedishfaq1515@gmail.com</p>
+                    <p><i class="fa-solid fa-paper-plane"></i> Abbottabad, Pakistan.</p>
+                </div>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
-  )
+        </div>
+    </div>
+    <div className='Last-footer'>
+        <p>Design By Waleed Ishfaq</p>
+    </div>
+</>
+)
 }
+
+ 

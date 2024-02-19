@@ -24,23 +24,11 @@ export const Contact = () => {
   }
 
   const handleSubmit = async (e) => {
+    const formEle = document.querySelector("form");
     e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
-    } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-    }
+   console.log("Submitted");
+
+
   };
 
   return (
@@ -59,7 +47,7 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
-                <form onSubmit={handleSubmit}>
+                <form className="form" onSubmit={(e)=>handleSubmit(e)}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
