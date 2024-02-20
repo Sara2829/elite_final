@@ -4,57 +4,72 @@ import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import './Footer.css';
+// import '~@fortawesome/fontawesome-free/css/all.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarker, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faFacebook, faGooglePlusSquare } from '@fortawesome/free-brands-svg-icons';
+
+
 
 export const Footer = () => {
   return (
-    <>
-    <div className="Footer">
-        <div className="container">
-            <div className="row">
-                <div className="col-md-6 col-lg-5 col-12 ft-1">
-                    <h3><span>WALEED</span>CODES</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ea quo ex ullam laboriosam magni totam, facere eos iure voluptate.</p>
-                    <div className="footer-icons">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                </div>
-                <div className="col-md-6 col-lg-3 col-12 ft-2">
-                    <h5>Quick Links</h5>
-                    <ul>
-                        <li className="nav-item">
-                            <a className="" href="/">Services</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="" href="/">Portfolio</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="" href="/">Contact Us</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="" href="/">Services</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="" href="/">Portfolio</a>
-                        </li>
-                    </ul>
-                </div>
-                <div className="col-md-6 col-lg-4 col-12 ft-3">
-                    <h5>Quick Links</h5>
-                    <p><i class="fa-solid fa-phone-volume"></i> +92 3121324083</p>
-                    <p><i class="fa-solid fa-envelope"></i> waleedishfaq1515@gmail.com</p>
-                    <p><i class="fa-solid fa-paper-plane"></i> Abbottabad, Pakistan.</p>
-                </div>
-            </div>
+    <div className="footer">
+      <div className="inner-footer">
+        {/* Company name and description */}
+        <div className="footer-items">
+          <h1>ELITE</h1>
+          <p>Description of any product or motto of the company.</p>
         </div>
-    </div>
-    <div className='Last-footer'>
-        <p>Design By Waleed Ishfaq</p>
-    </div>
-</>
-)
-}
 
- 
+        {/* Quick links */}
+        <div className="footer-items">
+          <h3>Quick Links</h3>
+          <div className="border1"></div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+
+        {/* Recipes */}
+        <div className="footer-items">
+          <h3>Recipes</h3>
+          <div className="border1"></div>
+          <ul>
+            <li><a href="#">Indian</a></li>
+            <li><a href="#">Chinese</a></li>
+            <li><a href="#">Mexican</a></li>
+            <li><a href="#">Italian</a></li>
+          </ul>
+        </div>
+
+        {/* Contact information */}
+        <div className="footer-items">
+          <h3>Contact us</h3>
+          <div className="border1"></div>
+          <ul>
+            {/* <FontAwesomeIcon icon={fa-phone}/> */}
+            <li><i className="fa fa-map-marker" aria-hidden="true"></i>XYZ, abc</li>
+            <li><i className="fa fa-phone" aria-hidden="true"></i>123456789</li>
+            <li><i className="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+          </ul>
+          
+          {/* Social links */}
+          <div className="social-media">
+            <a href="#"><i className="fab fa-instagram"></i></a>
+            <a href="#"><i className="fab fa-facebook"></i></a>
+            <a href="#"><i className="fab fa-google-plus-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer bottom */}
+      {/* <div className="footer-bottom">
+        Copyright &copy; Food and Burps 2020.
+      </div> */}
+    </div>
+  );
+};
